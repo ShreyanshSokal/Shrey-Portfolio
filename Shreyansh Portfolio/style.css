@@ -1,0 +1,388 @@
+* {
+    margin: 0px;
+}
+
+html #body {
+    height: 100%;
+}
+
+#bodyboi {
+    /* background-color: rgb(52, 23, 63); */
+
+    /* background-image: url("images/bg5.webp"); */
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contactclass,
+.certclass,
+.projectsclass,
+.projectsclass .container,
+.education,
+.pi,
+.skillsclass,
+.internclass,
+.ldn {
+
+    padding: 60px;
+    text-align: center;
+    z-index: 5;
+    /* border: 2px solid white; */
+    /* height: fit-content; */
+}
+
+.a1,
+.a2 {
+
+    margin: 10px;
+    padding: 0px;
+    width: 400px;
+    height: 320px;
+
+    /* height: fit-content; */
+
+}
+
+.a1,
+.aaa,
+.education {
+    transform: translateX(-190%);
+    animation: sectioncts 3s forwards;
+}
+
+.a2,
+.bbb {
+    transform: translateX(190%);
+    animation: sectioncts 3s forwards;
+}
+
+.a2 img {
+    margin: 0;
+    padding: 0;
+    /* height: fit-content; */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .spinner-border{
+    position: absolute;
+    top: 50%; right: 47%;
+    min-height: 50px;
+    max-height: 200px;
+    min-width: 50px;
+    max-width: 200px;
+   
+} */
+
+/* dark mode class */
+
+/* #navbar div button,
+#navbar div div ul li a{
+    color: black;
+    background-color:white;
+} */
+
+
+/* header styling ############## */
+
+.navdiv {
+    /* float: inline-start; */
+    height: 50px;
+    width: 100vw;
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* background-color: rgb(0, 17, 32); */
+    z-index: 10;
+}
+
+
+/* navbarrrr ====== */
+
+.navbar {
+
+    box-shadow: 1px 6px 3px 3px gray;
+    float: none;
+    top: 0;
+
+}
+
+
+/* Personal info */
+
+.pi {
+
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    height: fit-content;
+    /* background-image: url("images/bg1.jpg"); */
+}
+
+.pi .a1 {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+
+.logoclass a,
+.logoclass .cmr a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logoclass .cmr {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactclass a img,
+.logoclass a img {
+    margin: 3px;
+    border-radius: 50%;
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.edlogo img {
+    margin: 3px;
+    border-radius: 50%;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+/* main !!!@@@@@@@@@@@@@@@@@ */
+
+/* education styling #######3 */
+.education {
+    height: 400px;
+}
+
+/* skills============ */
+.skillsclass {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skillsclass p {
+    font-size: small;
+    text-align: center;
+}
+
+.aaa {
+    margin: 10px;
+    padding: 0px;
+    width: 500px;
+    height: fit-content;
+}
+
+.bbb {
+    margin: 10px;
+    padding: 0px;
+    width: 500px;
+    height: fit-content;
+}
+
+.skills .bbb {
+    height: 300px;
+}
+
+.aaa .mid {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+
+.skills {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+
+}
+
+.skills .ulsk img {
+    margin: 3px;
+    /* border-radius: 20px; */
+    width: 40px;
+    height: 40px;
+}
+
+/* internship====== */
+.cma {
+    text-align: left;
+}
+
+.cma .btn {
+    font-size: xx-small;
+}
+
+
+/* internships ===================== */
+
+.internclass {
+    height: auto;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.internclass .mid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/* projectsclasss===== */
+
+.projectsclass .container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects {
+    box-shadow: 1px 6px 8px gray;
+
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 200px;
+
+}
+
+
+.projects img {
+    height: 60%;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+
+/* certifications ============ */
+
+
+/* footer contact ============ */
+
+.contactclass img {
+    margin: 3px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.contactclass {
+    padding-bottom: 50px;
+}
+
+#btn-back-to-top {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* .liked {
+    color: red;
+} */
+
+.bttn i {
+    font-size: 1rem;
+    animation: heartbeat 4s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* ldn class */
+
+.ldn {
+    display: flex;
+    justify-content: center;
+}
+
+/* animations and transitions */
+
+@keyframes sectioncts {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+/* media '='[pl[pll=lk========= */
+
+@media (max-width:500px) {
+
+    html {
+        font-size: x-small;
+    }
+
+    .contactclass,
+    .certclass,
+    .projectsclass,
+    .projectsclass .container,
+    .education,
+    .pi,
+    .skillsclass,
+    .internclass,
+    .ldn {
+
+        padding: 20px;
+        text-align: center;
+        z-index: 5;
+        /* border: 2px solid white; */
+        height: fit-content;
+    }
+
+
+    .a1,
+    .a2 {
+
+        margin: 5px;
+        padding: 0px;
+        width: 300px;
+        height: 210px;
+
+    }
+
+    .navbar {
+
+        box-shadow: 1px 2px 1px 1px gray;
+
+    }
+
+
+}

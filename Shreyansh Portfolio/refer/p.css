@@ -1,0 +1,692 @@
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    /* 100  300   400   500     800 */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* %%%%%%%%%%%%%%%%        utility classes     %%%%%%%%%%%%%%%%% */
+
+.tred{
+    color: rgb(255, 0, 0);
+}
+.twhite{
+    color: rgb(255, 255, 255);
+}
+.tblack{
+    color: rgb(34, 34, 34);
+}
+
+.tgold{
+    color: gold;
+}
+
+.bb{
+    background-color: rgb(58, 58, 58);
+}
+
+.br{
+    background-color: rgb(230, 17, 17);
+}
+
+.bw{
+    background: rgb(255, 255, 255);
+}
+
+.tup{
+    text-transform: uppercase;
+}
+
+.tlarge{
+    font-size: 2rem;
+}
+.tmedium{
+    font-size: 1.5rem;
+}
+.tsmall{
+    font-size: 1rem;
+}
+
+.tbw{
+    border:2px solid rgb(255, 255, 255);
+}
+
+.tbb{
+    border: 2px solid black;
+}
+
+.tbr{
+    border: 1px solid red;
+}
+.tbg{
+    border: 2px solid green;
+}
+
+.tcenter{
+    text-align: center;
+}
+
+.container{
+    /* border: 2px solid purple; */
+    
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 3rem; */
+}
+
+
+
+
+.btnp{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none; 
+    text-align: center;
+    background-color:rgb(50, 209, 122) ;
+    /* background-color:#ffd633; */
+    margin-top: 1%;
+    padding: 1rem 1.5rem;
+    border-radius: 7rem;
+}
+
+.btns{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none; 
+    text-align: center;
+    background-color:rgb(50, 209, 122) ;
+    margin-top: 1%;
+    border-radius: 7rem;
+    padding: 0.5rem 1.3rem;
+}
+
+
+.btnp:hover, .btns:hover{
+    color: rgb(50, 209, 122);
+    background-color: #fff;
+    border: 0.2rem solid rgb(50, 209, 122);
+}
+
+
+/* !!!!!!!!!!!!!!!!!!  navigation !!!!!!!!!!!!!!!! */
+
+.hbm{
+    display: none;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navlist{
+    padding-right:1.5% ;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlist a:hover{
+    padding-bottom: 1%;
+    border-bottom: .2rem solid black;
+}
+
+.navlist a, .navlist li{
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* 222222222222222222    showcase    2222222222222222 */
+
+
+
+.showcase{
+    background:linear-gradient(rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.193)),  url('../img/background.jfif');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    height: 40vmax;
+}
+
+.showcase .container{
+    margin: auto;
+}
+
+/* 3333333333333333333        section 1        333333333333333 */
+
+.section1{
+    background-color: rgb(224, 225, 228);
+    display: flex;
+    height: 60vh;
+}
+
+.section1 .container{
+    height: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    padding: 0 20rem;
+    
+}
+
+.section1 .container .d1, .section1 .container .d2{
+    width: 50%;
+    height: 100%;
+}
+
+
+.section1 .container img{
+    width:100%;
+    height:100%;
+}
+
+.d1{
+    font-weight: 500;
+    transform: translateX(-150%);
+    animation: sectioncts 1s forwards;
+}
+
+.d2{
+    transform: translateX(150%);
+    animation: sectioncts 1s forwards;
+}
+
+@keyframes sectioncts{
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/* 444444444444444444      section 2       444444444444444444444 */
+
+#food{
+    height: 43vh;
+}
+
+.food-ct{
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-ct img{
+    display: block;
+    width: 100%;
+    margin:auto;
+    height: 20rem;
+   
+}
+
+
+.imgct{
+    margin: 0 1rem;
+    position: relative;
+    
+}
+
+.img-content h4{
+    margin-bottom: 1rem;
+}
+
+.img-content{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.imgct::after{
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: '';
+    /* color: rgb(255, 2, 2); */
+    background-color: rgba(0, 0, 0, 0.76);
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%; 
+    transition: all 0.3s ease-in-out;
+}
+
+.imgct:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+    
+}
+
+.imgct:hover .img-content{
+    opacity: 1;
+    top: 40%;
+}
+
+
+/* 5555555555555555555555  section 3    food menu       5555555555555555555 */
+
+
+.fooditemcontainer{
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fooditem{
+    
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.fooditem .itemimg img{
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.fooditem .itemtxt{
+    width: 15em;
+    margin :auto 1.5rem;
+}
+
+
+
+/* 6666666666666666666     testimonial        6666666666666666666666666 */
+
+.testimonial{
+    margin-top: 2%;
+    /* border: 4px solid yellow; */
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.164);
+}
+
+.testimonial .container{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonial .container .testcontainer{
+    width: 28%;
+}
+
+.testimonial .container .testcontainer img{
+    border-radius:50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.details p,.details img,.details h3{
+    margin-top: 1rem;
+}
+
+/* 7777777777777777777     contact page        7777777777777777777777 */
+
+.section4{
+    height: auto;
+}
+
+.section4 .container{
+    height:100%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .contactimgct img{
+    width: 100%;
+    height: 100%;
+}
+
+.section4 .contactimgct, .section4 .contactdetails{
+    width: 40%;
+    height: 80%;
+}
+
+.contactdetails h2::after, .contactdetails input::after{
+    display: block;
+    content: '';
+    border-bottom: .2rem solid rgb(21, 72, 44);
+}
+
+
+.contactdetails input,.contactdetails textarea, .contactdetails h2{
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    margin: 1rem 0 0 1rem;
+}
+
+.contactdetails a{
+    font-weight: 800;
+    margin: -1% 0 0 1rem;
+}
+
+.contactdetails textarea{
+    display: block;
+    width: 100%;
+}
+
+/* 8888888888888888888888888   footer  888888888888888888888888888 */
+
+.footer{
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    height: 15vh;
+}
+
+.footer h4{
+    margin: auto;
+}
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^    media query     ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+@media (min-width:800px) and (max-width: 1040px){
+    
+
+    html{
+        font-size: 8px;
+    }
+
+.fooditemcontainer{
+    padding: 1rem 0;
+}
+
+.fooditem{
+    margin-bottom: .2rem;
+}
+
+.fooditem .itemimg img{
+    width: 18rem;
+    height: 18rem;
+}
+
+.fooditem .itemtxt{
+    width: 10em;
+    margin :auto 1rem;
+}
+
+
+.details p,.details img,.details h3{
+    margin-top: .5rem;
+}
+
+
+
+.section1{
+    height: 50vh;
+}
+
+.section1 .container{
+    padding: 0 14rem;
+    
+}
+
+
+}
+
+
+
+
+@media (min-width:540px) and (max-width: 800px){
+
+
+    
+    .fooditem{
+        margin-bottom: 1rem;
+    }
+    
+    .fooditem .itemimg img{
+        width: 18rem;
+        height: 18rem;
+    }
+    
+    .fooditem .itemtxt{
+        width: 10em;
+        margin :auto 1rem;
+    }
+    
+    
+    .section1{
+        height: 50vh;
+    }
+    
+    .section1 .container{
+        padding: 0 6rem;
+        
+    }
+    
+        
+    .details p,.details img,.details h3{
+        margin-top: .5rem;
+    }
+    
+        .section4{
+            height: auto;
+        }
+        
+        .section4 .container{
+            height:auto;
+            margin-top: 1rem;
+            
+        }
+        
+        .section4 .contactimgct img, .section4 .d2{
+            width: 100%;
+            height: 200px;
+        }
+        
+        .contactdetails a{
+        
+            margin: -4% 0 0 1rem;
+        }
+    
+    }
+    
+    
+
+@media (min-width:0px) and (max-width: 540px){
+    html{
+        font-size: 6px;
+    }
+
+
+    .showcase{
+        margin-top: -33rem;
+    }
+    
+/* %%%%%%%%%%%%%%%%%%%     hamburger menu     %%%%%%%%%%%%%%%%% */
+
+.navbar{
+    display: none;
+}
+
+.hbm{
+    height: auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+
+.hbm input{
+    position: absolute;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 5;
+}
+
+.menu{
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 30px;
+    height: 30px;
+    z-index:3;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu::after{
+    background-color: rgba(255, 255, 255, 0.296);
+    position: absolute;
+    left: 35rem;
+    font-size: 3rem;
+    
+    display: inline block;
+    font-weight: 900;
+    content: 'FOOD WEBSITE';
+    color: black;
+}
+
+.line{
+    background-color: black;
+    width: 100%;
+    height: 7px;
+    margin: 3px 0px;
+    border-radius: 20%;
+   
+}
+
+.ct{
+    transform: translate(-100%,0%);
+    height: auto;
+    transition: 0.5s;
+    padding-top: 36px;
+    text-transform: uppercase;
+    z-index: -1;
+}
+
+.hbm .ct a{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    margin: .5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hbm .ct a:hover{
+    border-bottom: 2px solid black;
+}
+
+.hbm input[type=checkbox]:checked ~ .ct{
+    background-color: rgba(233, 233, 233, 0.377);
+    transform: translate(0%,0%);
+}
+
+.hbm input[type=checkbox]:checked ~ .menu .l1{
+    transform: rotate(45deg);
+    transform-origin: 0 0%;
+    transition:transform 0.5s ease-in-out;
+    background-color: rgb(0, 0, 0);
+
+} 
+.hbm input[type=checkbox]:checked~ .menu .l2{
+    transform: scaleY(0);
+} 
+
+.hbm input[type=checkbox]:checked ~ .menu .l3{
+    transform-origin: 0% 100%;
+    transition:transform 0.5s ease-in-out;
+    transform: rotate(-45deg);
+    background-color: rgb(0, 0, 0);
+  
+}
+
+.section1{
+    height: 40vh;
+}
+
+.section1 .container{
+    padding: 0 1rem;
+    
+}
+
+
+.food-ct {
+
+
+   
+}
+
+.details p,.details img,.details h3{
+    margin-top: .2rem;
+}
+
+
+.section4{
+    height: auto;
+}
+
+.section4 .container{
+    height:auto;
+    margin-top: 1rem;
+    
+}
+
+.section4 .contactimgct img{
+    width: 100%;
+    height: 200px;
+}
+
+.contactdetails a{
+
+    margin: -.2% 0 0 1rem;
+}
+
+.footer{
+    height: 10vh;
+}
+
+}
+
+@media (max-height: 370px){
+    
+.section1{
+    height: 240px;
+}
+}

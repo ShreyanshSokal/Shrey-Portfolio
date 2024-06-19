@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.container {
+        position: relative;
+      }  
+img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="certificate" >
+        <iframe style="height: 1000px; width :  1000px;" src="https://www.hackerrank.com/certificates/iframe/9407723872cd" frameborder="0"></iframe>
+        
+<div class="container">
+
+    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/053.webp" class="w-100" />
+        
+    <div class="middle">
+        <div class="text"></div>
+    </div>
+</div>
+        
+    </div>
+</body>
+</html>
